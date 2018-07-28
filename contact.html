@@ -42,7 +42,7 @@
     <meta name="captcha-bypass" id="captcha-bypass" />
 </head>
 <body class="bo">
-    <div class="loader"></div>
+    
     <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #004165; border-color: #004165;">
   <div class="container-fluid">
                 <div class="navbar-header">
@@ -56,10 +56,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <div>
     <ul class="nav navbar-nav" style="float: right;color: white;">
-      <li><a href="index.html" style="color: white;">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="members.html">Members</a></li>
       <li><a href="a.html">Achievements</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="contact.html" style="color: white;">Contact Us</a></li>
       <li><a href="faq.html">FAQ</a></li>
     </ul></div>
   </div></div>
@@ -82,24 +82,19 @@
 
   
    <div class="one">
-   	<h3 class="ui">What Do We Do?</h3>
-      <img src="fl.jpg" class="flyer">
-      <img src="fl1.jpg" class="flyer">
-      <img src="fl2.jpg" class="flyer">
-      <img src="fl3.jpg" class="flyer">
-      <h6 class="para">A Toastmasters meeting is a learn-by-doing workshop in which participants hone their speaking and leadership skills in a no-pressure atmosphere.
+   	<h3 class="ui">Contact Us</h3>
+    <a href="https://www.google.co.in/maps/place/Lecture+Hall+Complex/@10.7610154,78.8130765,18z/data=!4m8!1m2!2m1!1sNIT+Trichy!3m4!1s0x3baa8d38c81b8ddd:0xdfed267bcdd1b339!8m2!3d10.7610128!4d78.8141708"><img class="imgg" src="map.jpg"></a>
+      <h6 class="para">
+        Saikishore Raju<br>
+        President<br>
+        +91 9840740343<br><br><br>
+        Ram Sreevaths RS<br>
+        Vice President Public Relations<br>
+        +91 9791642075<br><br>
 
-A typical group has 20 to 40 members who meet weekly, biweekly or monthly.<br><br> A typical meeting lasts 60–90 minutes.
 
-There is no instructor in a Toastmasters meeting. Instead, members evaluate one another’s presentations. This feedback process is a key part of the program’s success.
 
-Meeting participants also give impromptu talks on assigned topics, conduct meetings and develop skills related to timekeeping, grammar and parliamentary procedure.<br><br>
 
-Members learn communication skills by working in the Competent Communication manual, a series of 10 self-paced speaking assignments designed to instill a basic foundation in public speaking.
-
-After every speech, there will be an evaluation which will help the speakers build on their strengths and take actions on their areas for improvement.
-<br><br>
-Members also learn leadership skills by taking on various meeting roles and working in the Competent Leadership manual. In our learn-by-doing approach, we don’t lecture members about leadership skills; we give them responsibilities and mentoring to help. Then we ask them to lead.</h6> 
    </div>
 
 
@@ -298,7 +293,9 @@ ul.ok
 }
 .para
 { color: black;
-  font-size: 25%;
+  font-size: 36%;
+  padding-top: 7%;
+  padding-left : 11%;
   font-family: 'Raleway', Open Sans, Helvetica, sans-serif !important; 
   text-align: left;}
 .l
@@ -314,7 +311,12 @@ ul.ok
 .ui
 { font-size:70%; }
 }
-
+.imgg
+{ width: 80%;
+  height: 80%;
+  padding-left: 1%;
+  padding-top: 10%;  
+}
 @media screen and (orientation: landscape)
 {   .header
   {
@@ -489,7 +491,9 @@ ul.ok
 }
 .para
 { color: black;
-  font-size: 40%;
+  padding-top: 6%;
+  padding-left: 11%;
+  font-size: 70%;
   font-family: 'Raleway', Open Sans, Helvetica, sans-serif !important; 
   text-align: left;}
 .l
@@ -507,49 +511,16 @@ ul.ok
   padding-top: 7%;
   font-size: 100%;
 }
-.loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('i.jpg') 50% 50% no-repeat rgb(249,249,249);
-    background-color: white;
-    transition-duration: 12s;
+.imgg
+{ width: 80%;
+  height: 50%;
+  padding-left: 1%;
+  padding-top: 6%;  
 }
 }
 
 }
     </style>
-  
-
-<script type="text/javascript">
-	 var slideindex = 0;
-     slideshow();
-
-function slideshow() {
-    var i;
-    var x = document.getElementsByClassName("flyer");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideindex++;
-    if (slideindex > x.length) {slideindex = 1} 
-    x[slideindex-1].style.display = "block"; 
-    
-    setTimeout(slideshow, 10000); // Change image every 2 seconds
-}
-
-function disp()
-{ document.write("Club number 06765726");}
-</script>
-
-<script type="text/javascript">
-  $(window).load(function() {
-    $(".loader").fadeOut("slow");
-});
-</script>
 
 
 </body>
